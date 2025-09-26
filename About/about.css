@@ -1,0 +1,143 @@
+:root {
+  --color-primary: #8b1e1e;
+  --color-secondary: #cfaf6e;
+  --color-background: #f5e9da;
+  --color-dark: #2c2c2c;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.about img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about-content button {
+  background: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.about-content button:hover {
+  background: var(--color-primary);
+}
+/* ===== Header ===== */
+.about-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+.about-header h1 {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+.about-header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  color: #444;
+}
+
+/* ===== Intro Section ===== */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+}
+.intro img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.intro-text h2 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.intro-text p {
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ===== Highlights ===== */
+.highlights {
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.highlight-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  border-top: 5px solid var(--color-secondary);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+.highlight-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+.highlight-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Quote Section ===== */
+.quote {
+  padding: 100px 20px;
+  text-align: center;
+  background: var(--color-primary);
+  color: #fff;
+}
+.quote h2 {
+  font-size: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+}

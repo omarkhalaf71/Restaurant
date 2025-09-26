@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Filterable</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/Menu/menu.css" />
+    <script
+      src="https://kit.fontawesome.com/8a365f542c.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">ALSEHE RESTAURANT</div>
+      <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/Menu/menu.html">Menu</a></li>
+        <li><a href="/About/about.html">About</a></li>
+        <li><a href="/OurTeam/ourteam.html">Staff</a></li>
+        <li><a href="/Contact/contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+      <button class="filter-btn" data-filter="main">Main Dishes</button>
+      <button class="filter-btn" data-filter="desserts">Desserts</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+    </div>
+
+    <!-- Menu Grid -->
+    <section class="menu-grid">
+      <div class="menu-card appetizers">
+        <img src="/images/Hummus.jpg" alt="Hummus" />
+        <div class="menu-content">
+          <h3 class="menu-title">Hummus</h3>
+          <p class="menu-description">
+            Creamy chickpea dip with tahini and olive oil.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$6</span>
+            <span class="menu-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card appetizers">
+        <img src="/images/Mutabbal.jpg" alt="Mutabbal" />
+        <div class="menu-content">
+          <h3 class="menu-title">Mutabbal</h3>
+          <p class="menu-description">
+            Smoky roasted eggplant dip with tahini and garlic.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$7</span>
+            <span class="menu-rating">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dishes -->
+      <div class="menu-card main">
+        <img src="/images/Kibbeh.jpg" alt="Kibbeh" />
+        <div class="menu-content">
+          <h3 class="menu-title">Kibbeh</h3>
+          <p class="menu-description">
+            Bulgur stuffed with spiced minced meat and nuts.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$12</span>
+            <span class="menu-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card main">
+        <img src="/images/shakriyeh.jpg" alt="Shakriya" />
+        <div class="menu-content">
+          <h3 class="menu-title">Shakriya</h3>
+          <p class="menu-description">
+            Yogurt stew with tender lamb and onions.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$15</span>
+            <span class="menu-rating">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card main">
+        <img src="/images/Kabob.jpg" alt="Grilled Kebab" />
+        <div class="menu-content">
+          <h3 class="menu-title">Grilled Kebab</h3>
+          <p class="menu-description">
+            Juicy skewers of lamb and vegetables with spices.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$18</span>
+            <span class="menu-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-card desserts">
+        <img src="/images/baklava.jpg" alt="Baklava" />
+        <div class="menu-content">
+          <h3 class="menu-title">Baklava</h3>
+          <p class="menu-description">
+            Layers of filo pastry with nuts and honey syrup.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$8</span>
+            <span class="menu-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card desserts">
+        <img src="/images/Knafeh.webp" alt="Knafeh" />
+        <div class="menu-content">
+          <h3 class="menu-title">Knafeh</h3>
+          <p class="menu-description">
+            Cheese pastry soaked in sweet syrup, topped with pistachios.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$9</span>
+            <span class="menu-rating">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-card drinks">
+        <img src="/images/Mint Lemonade.jpg" alt="Mint Lemonade" />
+        <div class="menu-content">
+          <h3 class="menu-title">Mint Lemonade</h3>
+          <p class="menu-description">
+            Fresh lemonade blended with mint leaves.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$5</span>
+            <span class="menu-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card drinks">
+        <img src="/images/coffee.jpg" alt="Turkish Coffee" />
+        <div class="menu-content">
+          <h3 class="menu-title">Turkish Coffee</h3>
+          <p class="menu-description">
+            Rich, strong coffee served in a traditional style.
+          </p>
+          <div class="menu-meta">
+            <span class="menu-price">$4</span>
+            <span class="menu-rating">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/main.js"></script>
+</html>

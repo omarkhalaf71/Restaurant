@@ -9,7 +9,7 @@ let index = 0
 
 function showSlide() {
   index = (index + 1) % 3
-  slides.style.transform = `translateX(-${index * 100}%)`
+  slides.style.transform = `translateX(-${index * 50}%)`
 }
 
 setInterval(showSlide, 3000)
